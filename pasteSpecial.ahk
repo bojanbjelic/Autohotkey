@@ -62,7 +62,7 @@ Input, key, L1,,.-_luUctv?{`,}
 	}
 	If key = ,
 	{
-		cl = %clipboard%
+		oCB = %ClipBoard%
 		If InStr(cl, "`r`n") > 0 { 
 			StringReplace, ClipBoard, ClipBoard, `r`n, `,, All 
 		} Else {
@@ -70,12 +70,16 @@ Input, key, L1,,.-_luUctv?{`,}
 		}
 		SendInput %clipboard%
 		ClipBoard := oCB
+		oCB = 
 	}
 	If key = v
 	{
-		;SendInput {Raw}%clipboard%
-		ClipBoard = %clipboard%
-		SendInput %clipboard%
+		oCB = %ClipBoardAll%
+		ClipBoard = %ClipBoard%
+		Send ^v
+		Sleep 100
+		ClipBoard := oCB
+		oCB :=
 	}
 	; help message
 	If key = ?
