@@ -1,16 +1,16 @@
-mixcloudWin = NULL
+mediaWindow = NULL
 SC122::
 ;IfWinNotActive
-if mixcloudWin = NULL
+if mediaWindow = NULL
 {
-  WinGet, mixcloudWin, ID, A
+  WinGet, mediaWindow, ID, A
 }
-IfWinExist ahk_id %mixcloudWin%
+IfWinExist ahk_id %mediaWindow%
 {
-  WinGet, working, ID, A
-  WinActivate, ahk_id %mixcloudWin%
+  WinGet, workingWindow, ID, A
+  WinActivate, ahk_id %mediaWindow%
   Sleep, 50
   Send {Space}
-  WinActivate, ahk_id %working%
+  WinActivate, ahk_id %workingWindow%
 }
 Exit
