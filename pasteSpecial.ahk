@@ -36,6 +36,7 @@ If (key = "c" or key = "t")
 		Else
 			output = %output% %str%
 	}
+	ClipBoard = %output%
 }
 
 ; -/_ = replace blanks with _; removes `.|
