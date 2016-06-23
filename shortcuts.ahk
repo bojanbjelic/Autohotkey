@@ -1,4 +1,4 @@
-﻿:*:@utc::
+:*:@utc::
 timeUTC := A_NowUTC
 FormatTime, new1, %timeUTC%,yyyy-MM-ddTHH:mmZ
 SendInput %new1%
@@ -22,10 +22,29 @@ FormatTime, new1, %timeUTC%,HH-mm-ss
 SendInput %new1%
 return
 
-:*:@chars::
-SendInput ✔ × ✖ ★ ☆ ¥ € ≈ ← → ↑ ↓ ±
+:*:@euro::
+SendInput €
 return
 
+:*:@currencies::
+SendInput ¤ € £ ￥¢ $ ₪ ௹ ﷼
+return
+
+:*:@chars::
+SendInput ✔ × ✖ ★ ☆ ¥ € ≈ ← → ↑ ↓ ↪ ⤴ ⤹ ± 👋 👽 👍 💀
+return
+
+:*:@arrows::
+SendInput ← → ↑ ↓ ↪ ⤴ ⤹ 
+return
+
+:*:@->::
+SendInput →
+return
+
+:*:@--::
+SendInput —
+return
 
 ; Caps Lock - disabled
 CapsLock::
