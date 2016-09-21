@@ -22,7 +22,7 @@ FormatTime, new1, %timeUTC%,HH-mm-ss
 SendInput %new1%
 return
 
-:*:@eur::
+:*:@euro::
 SendInput €
 return
 
@@ -31,15 +31,19 @@ SendInput ¤ € £ ￥¢ $ ₪ ௹ ﷼
 return
 
 :*:@chars::
-SendInput ✔×✖★☆≈←→↑↓↪↩↘⤴⤵±👋👽👍💀
+SendInput ✔×✖★☆≈±👋👽👍💀✈⌨⚓△💼💳💵📁📂📄
 return
 
 :*:@arrows::
 SendInput ←→↑↓↪↩↘⤴⤵
 return
 
-:*:@->::
+:*:@>>::
 SendInput →
+return
+
+:*:@||::
+SendInput ↑
 return
 
 :*:@--::
