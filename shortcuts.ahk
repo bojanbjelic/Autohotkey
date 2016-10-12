@@ -31,7 +31,7 @@ SendInput ¤ € £ ￥¢ $ ₪ ௹ ﷼
 return
 
 :*:@chars::
-SendInput ✔×✖★☆≈±👋👽👍💀✈⌨⚓△💼💳💵📁📂📄
+SendInput ✔×✖★☆≈±👋👽👍💀✈⌨⚓△💼💳💵📁📂📄🎉
 return
 
 :*:@arrows::
@@ -46,8 +46,16 @@ return
 SendInput ↑
 return
 
+:*:@check::
+SendInput ✔
+return
+
 :*:@--::
 SendInput —
+return
+
+:*:@party::
+SendInput 🎉
 return
 
 ; Caps Lock - disabled
